@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Holodist</string>
+    <string name="next">Next</string>
+    <string name="app_desc">Aplikasi berbasis android untuk membantu siswa memahami visualisasi bangun ruang</string>
+</resources>
