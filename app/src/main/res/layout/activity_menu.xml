@@ -46,6 +46,7 @@
                 android:layout_height="100dp"
                 android:background="#ff6b81"
                 android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical">
                 <ImageView
                     android:layout_width="70dp"
@@ -67,6 +68,7 @@
                 android:layout_marginStart="20dp"
                 android:background="#ff6b81"
                 android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical">
                 <ImageView
                     android:layout_width="70dp"
@@ -94,6 +96,7 @@
                 android:layout_height="100dp"
                 android:background="#ff6b81"
                 android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical">
                 <ImageView
                     android:layout_width="70dp"
@@ -115,6 +118,7 @@
                 android:layout_marginStart="20dp"
                 android:background="#ff6b81"
                 android:clickable="true"
+                android:focusable="true"
                 android:orientation="vertical">
                 <ImageView
                     android:layout_width="70dp"
