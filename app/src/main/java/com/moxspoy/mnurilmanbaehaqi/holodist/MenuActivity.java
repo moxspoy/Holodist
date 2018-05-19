@@ -15,45 +15,47 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         handleBos();
     }
+
+    private void handleBos() {
+
+            //Init with layout
+            bKompetensi = findViewById(R.id.kompetensi);
+            bVideo      = findViewById(R.id.video);
+            bMateri     = findViewById(R.id.materi);
+            bLatihan    = findViewById(R.id.latihan);
+
+            //Action
+            bKompetensi.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getApplicationContext(), KompetensiActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            bVideo.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getApplicationContext(), VideoActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            bMateri.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getApplicationContext(), MateriActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            bLatihan.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getApplicationContext(), LatihanActivity.class);
+                    startActivity(intent);
+                }
+            });
+        }
 }
 
-void handleBos() {
-    //Init with layout
-    bKompetensi = findViewById(R.id.kompetensi);
-    bVideo      = findViewById(R.id.video);
-    bMateri     = findViewById(R.id.materi);
-    bLatihan    = findViewById(R.id.latihan);
-
-    //Action
-    bKompetensi.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(), KompetensiActivity.class);
-            startActivity(intent);
-        }
-    });
-
-    bVideo.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(), VideoActivity.class);
-            startActivity(intent);
-        }
-    });
-
-    bMateri.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(), MateriActivity.class);
-            startActivity(intent);
-        }
-    });
-
-    bLatihan.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(), LatihanActivity.class);
-            startActivity(intent);
-        }
-    });
-}
